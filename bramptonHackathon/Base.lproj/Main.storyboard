@@ -134,19 +134,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="magic search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqm-FH-Wvx">
-                                <rect key="frame" x="61" y="370" width="292" height="60"/>
+                                <rect key="frame" x="61" y="295" width="292" height="60"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="type here" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xL4-xH-qh9">
-                                <rect key="frame" x="35" y="445" width="344" height="39.5"/>
+                                <rect key="frame" x="35" y="370" width="344" height="39.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" name="dopeGreen"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gZ-av-CBt">
-                                <rect key="frame" x="125.5" y="791" width="163" height="46"/>
+                                <rect key="frame" x="125.5" y="459.5" width="163" height="46"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="proceed" cornerStyle="capsule">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="30"/>
@@ -167,9 +168,9 @@
                             <constraint firstItem="gCW-5i-pn9" firstAttribute="trailing" secondItem="xL4-xH-qh9" secondAttribute="trailing" constant="35" id="HyT-Gg-XAd"/>
                             <constraint firstItem="8gZ-av-CBt" firstAttribute="centerX" secondItem="gCW-5i-pn9" secondAttribute="centerX" id="Kh9-Db-uHe"/>
                             <constraint firstItem="xL4-xH-qh9" firstAttribute="top" secondItem="rqm-FH-Wvx" secondAttribute="bottom" constant="15" id="NXf-sy-EeU"/>
-                            <constraint firstItem="gCW-5i-pn9" firstAttribute="bottom" secondItem="8gZ-av-CBt" secondAttribute="bottom" constant="25" id="SSt-ea-Buc"/>
-                            <constraint firstItem="rqm-FH-Wvx" firstAttribute="centerY" secondItem="gCW-5i-pn9" secondAttribute="centerY" constant="-75" id="UfC-JF-gNa"/>
+                            <constraint firstItem="rqm-FH-Wvx" firstAttribute="centerY" secondItem="gCW-5i-pn9" secondAttribute="centerY" constant="-150" id="UfC-JF-gNa"/>
                             <constraint firstItem="xL4-xH-qh9" firstAttribute="leading" secondItem="gCW-5i-pn9" secondAttribute="leading" constant="35" id="ZEk-va-ydb"/>
+                            <constraint firstItem="8gZ-av-CBt" firstAttribute="top" secondItem="xL4-xH-qh9" secondAttribute="bottom" constant="50" id="sqS-fm-pGA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hed-Y6-9Wt">
