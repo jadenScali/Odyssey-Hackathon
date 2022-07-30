@@ -9,7 +9,10 @@ import UIKit
 
 class ResultsVC: UIViewController {
     
-var recyclableIteams: [String] = [
+    @IBOutlet weak var typeText: UILabel!
+    @IBOutlet var superView: UIView!
+    
+    var recyclableIteams: [String] = [
     "plastic water bottle",
     "aluminum can",
     "aluminum foil plate",
@@ -128,10 +131,16 @@ var compostIteams: [String] = [
         
         if recyclableIteams.contains(currentObjectName.lowercased()) {
             print ("is recycle")
+            typeText.text = "Recycle"
+            superView.backgroundColor = #colorLiteral(red: 0.3960784314, green: 0.5568627451, blue: 0.6117647059, alpha: 1)
         } else if compostIteams.contains(currentObjectName.lowercased()) {
             print ("is compost")
+            typeText.text = "Compost"
+            superView.backgroundColor = #colorLiteral(red: 0.5490196078, green: 0.7294117647, blue: 0.5019607843, alpha: 1)
         } else {
             print("is garbage")
+            typeText.text = "Garbage"
+            superView.backgroundColor = .darkGray
         }
     }
 }

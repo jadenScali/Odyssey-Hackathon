@@ -3,8 +3,8 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="-1125" y="98"/>
         </scene>
-        <!--Live ScanVC-->
+        <!-- -->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="liveScanVC" customModule="bramptonHackathon" customModuleProvider="target" sceneMemberID="viewController">
@@ -35,6 +35,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Move camera slowly around object" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="f8B-uy-61K">
                                 <rect key="frame" x="15" y="88" width="384" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqe-RS-8Jt">
@@ -52,7 +53,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.5490196078431373" green="0.72941176470588232" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="dopeGreen"/>
                         <constraints>
                             <constraint firstItem="f8B-uy-61K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="6aE-l6-sRz"/>
                             <constraint firstItem="f8B-uy-61K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="BMz-5K-XBQ"/>
@@ -61,7 +62,11 @@
                             <constraint firstItem="qqe-RS-8Jt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zGC-tL-pLH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="w1d-Uv-Xif"/>
+                    <navigationItem key="navigationItem" title=" " id="w1d-Uv-Xif">
+                        <barButtonItem key="backBarButtonItem" title=" " id="hZu-D1-EBm">
+                            <color key="tintColor" name="funAvocado"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="objectLabel" destination="f8B-uy-61K" id="vSl-2a-KvJ"/>
                     </connections>
@@ -70,17 +75,34 @@
             </objects>
             <point key="canvasLocation" x="-26" y="98"/>
         </scene>
-        <!--ResultsVC-->
+        <!-- -->
         <scene sceneID="Zvj-Eu-yHh">
             <objects>
                 <viewController id="jS7-O4-yag" customClass="ResultsVC" customModule="bramptonHackathon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TGV-oo-vl6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recycle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GnP-Ha-s3T">
+                                <rect key="frame" x="15" y="113" width="384" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="IDY-J1-Fx5"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="coolTeal"/>
+                        <constraints>
+                            <constraint firstItem="GnP-Ha-s3T" firstAttribute="top" secondItem="IDY-J1-Fx5" secondAttribute="top" constant="25" id="8vN-E2-bxk"/>
+                            <constraint firstItem="GnP-Ha-s3T" firstAttribute="leading" secondItem="IDY-J1-Fx5" secondAttribute="leading" constant="15" id="Fdx-jf-BIV"/>
+                            <constraint firstItem="IDY-J1-Fx5" firstAttribute="trailing" secondItem="GnP-Ha-s3T" secondAttribute="trailing" constant="15" id="Zss-rO-rDy"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="aP8-xA-W6c"/>
+                    <navigationItem key="navigationItem" title=" " id="aP8-xA-W6c"/>
+                    <connections>
+                        <outlet property="superView" destination="TGV-oo-vl6" id="3NS-ZI-Jmh"/>
+                        <outlet property="typeText" destination="GnP-Ha-s3T" id="daE-s8-aMI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QA7-Eb-Oiv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,8 +110,14 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="coolTeal">
+            <color red="0.396078431372549" green="0.55686274509803924" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="dopeGreen">
+            <color red="0.5490196078431373" green="0.72941176470588232" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="funAvocado">
+            <color red="0.792156862745098" green="0.81176470588235294" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
