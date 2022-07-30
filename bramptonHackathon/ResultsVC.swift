@@ -131,15 +131,15 @@ var compostIteams: [String] = [
         
         if recyclableIteams.contains(currentObjectName.lowercased()) {
             print ("is recycle")
-            typeText.text = "Recycle"
+            typeText.text = "recycle"
             superView.backgroundColor = #colorLiteral(red: 0.3960784314, green: 0.5568627451, blue: 0.6117647059, alpha: 1)
         } else if compostIteams.contains(currentObjectName.lowercased()) {
             print ("is compost")
-            typeText.text = "Compost"
+            typeText.text = "compost"
             superView.backgroundColor = #colorLiteral(red: 0.5490196078, green: 0.7294117647, blue: 0.5019607843, alpha: 1)
         } else {
             print("is garbage")
-            typeText.text = "Garbage"
+            typeText.text = "garbage"
             superView.backgroundColor = .darkGray
         }
     }
