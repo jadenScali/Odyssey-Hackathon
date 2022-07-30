@@ -12,22 +12,25 @@ class ResultsVC: UIViewController {
     @IBOutlet weak var typeText: UILabel!
     @IBOutlet var superView: UIView!
     @IBOutlet weak var biotext: UILabel!
+    @IBOutlet weak var mainImage: UIImageView!
     
     var recyclableIteams: [String] = [
-        "plastic water bottle",
-        "aluminum can",
-        "aluminum foil plate",
-        "aluminum trays and liners",
-        "antifreeze - empty container",
-        "applesauce, jello and pudding cups (single serving)",
-        "aseptic container or box (soy, milk, juice, water, soup, drinks)",
-        "black plastic takeout trays",
+        "paper",
+        "plasticwaterbottle",
+        "aluminumcan",
+        "aluminumfoilplate",
+        "aluminumtrays",
+        "antifreeze",
+        "applesauce",
+        "box",
+        "takeouttrays",
         "boxboard",
-        "bread bag",
-        "bristol board or flip chart paper",
-        "broken glass from jars and bottles",
+        "breadbag",
+        "bristolboard",
+        "brokenglass",
+        "glass",
         "calendar",
-        "cardboard box, basket or carton",
+        "cardboard",
         "catalogue",
         "cereal, pasta or cakemix box",
         "clear plastic egg carton",
@@ -118,50 +121,50 @@ class ResultsVC: UIViewController {
         "white styrofoam packaging",
         "writing paper",
         "yogurt beverage container",
-        "yogurt tub and lids"
+        "yogurt tub and lids",
+        "envelope"
     ]
     
     var compostIteams: [String] = [
+        "apple",
+        "apricot",
+        "avocado",
         "banana",
-        "Apple",
-        "Apricot",
-        "Avocado",
-        "Banana",
-        "Blackberry",
-        "Blueberry",
-        "Cherry",
-        "Coconut",
-        "Cucumber",
-        "Durian",
-        "Dragonfruit",
-        "Fig",
-        "Gooseberry",
-        "Grape",
-        "Guava",
-        "Jackfruit",
-        "Plum",
-        "Kiwifruit",
-        "Kumquat",
-        "Lemon",
-        "Lime",
-        "Mango",
-        "Watermelon",
-        "Mulberry",
-        "Orange",
-        "Papaya",
-        "Passionfruit",
-        "Peach",
-        "Pear",
-        "Persimmon",
-        "Pineapple",
-        "Pineberry",
-        "Quince",
-        "Raspberry",
-        "Soursop",
-        "Star fruit",
-        "Strawberry",
-        "Tamarind",
-        "Yuzu",
+        "blackberry",
+        "blueberry",
+        "cherry",
+        "coconut",
+        "cucumber",
+        "durian",
+        "dragonfruit",
+        "fig",
+        "gooseberry",
+        "grape",
+        "guava",
+        "jackfruit",
+        "plum",
+        "kiwifruit",
+        "kumquat",
+        "lemon",
+        "lime",
+        "mango",
+        "watermelon",
+        "mulberry",
+        "orange",
+        "papaya",
+        "passionfruit",
+        "peach",
+        "pear",
+        "persimmon",
+        "pineapple",
+        "pineberry",
+        "quince",
+        "raspberry",
+        "soursop",
+        "star fruit",
+        "strawberry",
+        "tamarind",
+        "yuzu",
         "artichoke",
         "aubergine",
         "asparagus",
@@ -193,7 +196,7 @@ class ResultsVC: UIViewController {
         "brussels sprouts",
         "cabbage",
         "kohlrabi",
-        "Savoy cabbage",
+        "savoy cabbage",
         "red cabbage",
         "cauliflower",
         "celery",
@@ -228,7 +231,6 @@ class ResultsVC: UIViewController {
         "mushrooms",
         "Nettles",
         "spinach",
-        "New Zealand spinach",
         "okra",
         "onions",
         "chives",
@@ -285,15 +287,15 @@ class ResultsVC: UIViewController {
         "delicata",
         "gem squash",
         "hubbard squash",
-        "Marrow",
-        "Squash",
+        "marrow",
+        "squash",
         "spaghetti squash",
         "zucchini",
         "spinach",
         "tat soi",
         "tomato",
         "watercress",
-        "Turnips",
+        "turnips",
         "eggshells",
         "coffee",
         "tea",
@@ -304,37 +306,40 @@ class ResultsVC: UIViewController {
     override func viewDidLoad() {
     super.viewDidLoad()
 
-        // Do any additional setup after loading the view
+        mainImage.layer.cornerRadius = mainImage.frame.size.width / 2.0
         
         let recyclingBios: [String] = [
-            "\(currentObjectName)s can go in the blue bin. after that, it will be processed and turned into something new! this is good for the environment because it reduces waste in landfills.",
-            "\(currentObjectName)s can go in the blue bin. plastic is a common recylable item, but less than 10% of it is recycled. thank you for helping to increase recycling rates."
+            "\(currentObjectName)s can go in the blue bin. after that, they will be processed and turned into something new! this is good for the environment because it reduces waste in landfills.",
+            "\(currentObjectName)s can go in the blue bin. paper and plastics are common recylable items, but less than 10% is actually recycled. thank you for helping to increase recycling rates."
         ]
         
         let compostBios: [String] = [
             "\(currentObjectName)s can go in the green bin. compost is used to create soil fertilizer, which grows healthy plants! this is fantastic for the environment, so continue to use compostable items.",
-            "\(currentObjectName)s can go in the green bin. tn the u.s., only about 4% of food waste is composted every year. thanks to you, that number is going to increase!"
+            "\(currentObjectName)s can go in the green bin. in the u.s., only about 4% of food waste is composted every year. thanks to you, that number is going up!"
         ]
         
         let garbageBios: [String] = [
-            "\(currentObjectName)s must go in the garbage bin. then, it will be dumped into a landfill, which pollutes the earth and harms the environment. try your best to avoid using items which go in the trash.",
-            "\(currentObjectName)s must go in the garbage bin. landfills produce about 25% of canada's methane emissions, which contributes to global warming. try to avoid using items which ends up in the garbage."
+            "\(currentObjectName)s must go in the garbage bin. then they will then be dumped into a landfill, which pollutes the earth and harms the environment. try your best to avoid using items that go in the trash.",
+            "\(currentObjectName)s must go in the garbage bin. landfills produce about 25% of canada's methane emissions, which contributes to global warming. try to avoid using items that end up in the garbage."
         ]
         
         let ranNum = Int.random(in: 0...recyclingBios.count - 1)
         
         if recyclableIteams.contains(currentObjectName.lowercased()) {
             print ("is recycle")
+            mainImage.image = UIImage(named: "recycleCan")
             typeText.text = "recycle"
             biotext.text = recyclingBios[ranNum]
             superView.backgroundColor = #colorLiteral(red: 0.3960784314, green: 0.5568627451, blue: 0.6117647059, alpha: 1)
         } else if compostIteams.contains(currentObjectName.lowercased()) {
             print ("is compost")
+            mainImage.image = UIImage(named: "compost")
             typeText.text = "compost"
             biotext.text = compostBios[ranNum]
             superView.backgroundColor = UIColor.systemBrown
         } else {
             print("is garbage")
+            mainImage.image = UIImage(named: "trashCan")
             typeText.text = "garbage"
             biotext.text = garbageBios[ranNum]
             superView.backgroundColor = .darkGray
