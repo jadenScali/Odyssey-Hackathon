@@ -11,6 +11,7 @@ class ResultsVC: UIViewController {
     
     @IBOutlet weak var typeText: UILabel!
     @IBOutlet var superView: UIView!
+    @IBOutlet weak var biotext: UILabel!
     
     var recyclableIteams: [String] = [
     "plastic water bottle",
@@ -118,12 +119,12 @@ class ResultsVC: UIViewController {
     "writing paper",
     "yogurt beverage container",
     "yogurt tub and lids"
-]
+    ]
     
-var compostIteams: [String] = [
-    "banana"
-]
-
+    var compostIteams: [String] = [
+        "banana"
+    ]
+    
     override func viewDidLoad() {
     super.viewDidLoad()
 
