@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "7f2caf6ebf095ce24d609db74a7a31c6--lakes.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
