@@ -89,13 +89,22 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ow7-zI-99I">
+                                <rect key="frame" x="30" y="198" width="384" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IDY-J1-Fx5"/>
                         <color key="backgroundColor" name="coolTeal"/>
                         <constraints>
+                            <constraint firstItem="Ow7-zI-99I" firstAttribute="trailing" secondItem="GnP-Ha-s3T" secondAttribute="trailing" constant="15" id="2b8-uK-Nz6"/>
                             <constraint firstItem="GnP-Ha-s3T" firstAttribute="top" secondItem="IDY-J1-Fx5" secondAttribute="top" constant="25" id="8vN-E2-bxk"/>
                             <constraint firstItem="GnP-Ha-s3T" firstAttribute="leading" secondItem="IDY-J1-Fx5" secondAttribute="leading" constant="15" id="Fdx-jf-BIV"/>
                             <constraint firstItem="IDY-J1-Fx5" firstAttribute="trailing" secondItem="GnP-Ha-s3T" secondAttribute="trailing" constant="15" id="Zss-rO-rDy"/>
+                            <constraint firstItem="Ow7-zI-99I" firstAttribute="leading" secondItem="GnP-Ha-s3T" secondAttribute="leading" constant="15" id="fM3-hV-T38"/>
+                            <constraint firstItem="Ow7-zI-99I" firstAttribute="top" secondItem="GnP-Ha-s3T" secondAttribute="bottom" constant="25" id="wiU-5D-TmD"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title=" " id="aP8-xA-W6c"/>
