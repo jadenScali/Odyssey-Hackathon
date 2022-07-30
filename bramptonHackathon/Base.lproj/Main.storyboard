@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Fmu-PU-0OQ"/>
+                        <segue destination="Pn8-C5-k6P" kind="relationship" relationship="rootViewController" id="Rbh-e6-2fH"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eFX-63-4bH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -33,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="move camera slowly around object" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="f8B-uy-61K">
-                                <rect key="frame" x="15" y="88" width="384" height="60"/>
+                                <rect key="frame" x="15" y="44" width="384" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -134,14 +134,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="magic search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqm-FH-Wvx">
-                                <rect key="frame" x="61" y="348" width="292" height="60"/>
+                                <rect key="frame" x="61" y="370" width="292" height="60"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xL4-xH-qh9">
-                                <rect key="frame" x="191" y="511" width="32" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="type here" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xL4-xH-qh9">
+                                <rect key="frame" x="35" y="445" width="344" height="39.5"/>
+                                <color key="textColor" name="dopeGreen"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gZ-av-CBt">
@@ -163,14 +164,18 @@
                         <constraints>
                             <constraint firstItem="rqm-FH-Wvx" firstAttribute="centerX" secondItem="gCW-5i-pn9" secondAttribute="centerX" id="CAr-Az-T6f"/>
                             <constraint firstItem="xL4-xH-qh9" firstAttribute="centerX" secondItem="gCW-5i-pn9" secondAttribute="centerX" id="HhT-Dp-Cjk"/>
+                            <constraint firstItem="gCW-5i-pn9" firstAttribute="trailing" secondItem="xL4-xH-qh9" secondAttribute="trailing" constant="35" id="HyT-Gg-XAd"/>
                             <constraint firstItem="8gZ-av-CBt" firstAttribute="centerX" secondItem="gCW-5i-pn9" secondAttribute="centerX" id="Kh9-Db-uHe"/>
-                            <constraint firstItem="xL4-xH-qh9" firstAttribute="top" secondItem="rqm-FH-Wvx" secondAttribute="bottom" constant="103" id="NXf-sy-EeU"/>
+                            <constraint firstItem="xL4-xH-qh9" firstAttribute="top" secondItem="rqm-FH-Wvx" secondAttribute="bottom" constant="15" id="NXf-sy-EeU"/>
                             <constraint firstItem="gCW-5i-pn9" firstAttribute="bottom" secondItem="8gZ-av-CBt" secondAttribute="bottom" constant="25" id="SSt-ea-Buc"/>
                             <constraint firstItem="rqm-FH-Wvx" firstAttribute="centerY" secondItem="gCW-5i-pn9" secondAttribute="centerY" constant="-75" id="UfC-JF-gNa"/>
+                            <constraint firstItem="xL4-xH-qh9" firstAttribute="leading" secondItem="gCW-5i-pn9" secondAttribute="leading" constant="35" id="ZEk-va-ydb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hed-Y6-9Wt">
-                        <barButtonItem key="backBarButtonItem" title=" " id="7T9-Sg-IuR"/>
+                        <barButtonItem key="backBarButtonItem" title=" " id="7T9-Sg-IuR">
+                            <color key="tintColor" name="dopeGreen"/>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C1M-k8-G64" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -179,7 +184,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Gog-DG-oel"/>
+        <segue reference="n6h-2r-Ffr"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="coolTeal">
