@@ -15,6 +15,7 @@ class ResultsVC: UIViewController {
     @IBOutlet weak var mainImage: UIImageView!
     
     var recyclableIteams: [String] = [
+        "plastic",
         "paper",
         "plasticwaterbottle",
         "aluminumcan",
@@ -300,7 +301,6 @@ class ResultsVC: UIViewController {
         "coffee",
         "tea",
         "grass"
-
     ]
     
     override func viewDidLoad() {

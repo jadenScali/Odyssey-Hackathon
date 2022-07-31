@@ -343,13 +343,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqm-FH-Wvx">
-                                <rect key="frame" x="133" y="273" width="148" height="60"/>
+                                <rect key="frame" x="133" y="248" width="148" height="60"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="type here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xL4-xH-qh9">
-                                <rect key="frame" x="35" y="348" width="344" height="39.5"/>
+                                <rect key="frame" x="35" y="323" width="344" height="39.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" name="dopeGreen"/>
                                 <color key="textColor" name="dopeGreen"/>
@@ -357,7 +357,7 @@
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gZ-av-CBt">
-                                <rect key="frame" x="125.5" y="437.5" width="163" height="56"/>
+                                <rect key="frame" x="125.5" y="412.5" width="163" height="56"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="proceed" cornerStyle="capsule">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="30"/>
@@ -379,7 +379,7 @@
                             <constraint firstItem="gCW-5i-pn9" firstAttribute="trailing" secondItem="xL4-xH-qh9" secondAttribute="trailing" constant="35" id="HyT-Gg-XAd"/>
                             <constraint firstItem="8gZ-av-CBt" firstAttribute="centerX" secondItem="gCW-5i-pn9" secondAttribute="centerX" id="Kh9-Db-uHe"/>
                             <constraint firstItem="xL4-xH-qh9" firstAttribute="top" secondItem="rqm-FH-Wvx" secondAttribute="bottom" constant="15" id="NXf-sy-EeU"/>
-                            <constraint firstItem="rqm-FH-Wvx" firstAttribute="centerY" secondItem="gCW-5i-pn9" secondAttribute="centerY" constant="-150" id="UfC-JF-gNa"/>
+                            <constraint firstItem="rqm-FH-Wvx" firstAttribute="centerY" secondItem="gCW-5i-pn9" secondAttribute="centerY" constant="-175" id="UfC-JF-gNa"/>
                             <constraint firstItem="xL4-xH-qh9" firstAttribute="leading" secondItem="gCW-5i-pn9" secondAttribute="leading" constant="35" id="ZEk-va-ydb"/>
                             <constraint firstItem="8gZ-av-CBt" firstAttribute="top" secondItem="xL4-xH-qh9" secondAttribute="bottom" constant="50" id="sqS-fm-pGA"/>
                         </constraints>
